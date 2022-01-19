@@ -9,12 +9,13 @@
  * @wordpress-plugin
  * Plugin Name: MONTAGMORGENS Disable Comments
  * Description: Dieses Plugin deaktiviert das WordPress-Kommentarsystem.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      MONTAGMORGENS GmbH
  * Author URI:  https://www.montagmorgens.com/
  * License:     GNU General Public License v.2
  * Text Domain: mo-disable-comments
  * GitHub Plugin URI: montagmorgens/mo-disable-comments
+ * Primary Branch: main
  */
 
 namespace Mo\Disable_Comments;
@@ -36,7 +37,7 @@ if ( ! is_admin() ) {
  * @var object|null $instance The plugin singleton.
  */
 final class Disable_Comments {
-	const PLUGIN_VERSION       = '1.0.1';
+	const PLUGIN_VERSION       = '1.0.2';
 	protected static $instance = null;
 	private $modified_types    = [];
 
